@@ -1,0 +1,29 @@
+    .ca__title {  
+    font-size: 3rem; 
+    color:thistle;}
+
+    .ca__subtitle { 
+    font-size: 1.8rem;
+    color:white ;}
+
+    .bg__footer {
+        background-color: #E0BBE4 ;  
+    }
+    
+    .footer__logo {
+        height: 8rem;
+    }
+    
+    .footer__slogan {  
+        color: blueviolet; 
+    }
+        
+    .footer__item {
+        height: 35px;
+    }
+
+
+    /*---ABOUT US---*/
+    .au__text {
+        text-align: justify;
+    }
