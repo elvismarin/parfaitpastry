@@ -48,6 +48,97 @@
     </div>
   </nav>
 
+<!--FORM-->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-7">
+
+      <h3 class="text-center">Special Order</h3>
+      <form action="#" method="get" enctype="text/plain">
+        
+        <legend> <p class="mt-4 text-center">Contact information</p>
+          
+          <div class="mb-3"><label class="form-label" for="Name"> Full name </label> 
+               <input class="form-control" type="text" name="Name">
+          </div>
+
+          <div class="mb-3"><label class="form-label" for="Phone_number">Phone number</label>
+               <input class="form-control" type="number" name="Phone_number" min="0">
+          </div>
+
+          <div class="mb-3"><label class="form-label" for="email">Email address</label>
+            <input class="form-control" type="email" id="email">
+            <div class="form-text">We'll send you the receipt and the news about your order. </div>
+          </div>
+        </legend>
+        
+        <legend> <p class="mt-4 text-center">Delivery specifications</p>
+
+          <div class="mt-3 mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery">
+              <label class="form-check-label" for="delivery" value="delivery">
+                Delivery
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="delivery" checked>
+              <label class="form-check-label" for="delivery" value="pickup">
+                Pick-up
+              </label>
+            </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="address">Address</label>
+              <input class="form-control" type="text" name="address">
+              <div class="form-text">Just in case you need delivery.</div>
+            </div>
+
+            <div>
+              <label class="form-label" for="date">Delivery or pick up date</label>
+              <input class="form-control" type="date" name="date">
+            </div>
+
+        
+
+        </legend>
+
+        <legend> <p class="text-center mt-4">Order specifications</p>
+          
+          <div class="mb-3"><label class="form-label" for="product">Product</label>
+            <select class="form-control" id="product">
+              <option>Select your product</option>
+              <option value="cheesecake">Berries cheesecake</option>
+              <option value="chocotorta">Chocotorta</option>
+              <option value="chocolate_cake">Chocolate cake</option>
+              <option value="tiramisu">Tiramisu</option>
+            </select></div>
+        
+          <div class="mb-3"><label class="form-label" for="product">Quantity</label>
+            <select class="form-control" id="product">
+              <option>Qty</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select></div>
+
+            <div><label class="form-label" for="comment"> Any additional information or instructions? </label>
+            <textarea class="form-control mb-3" id="comment" rows="6"></textarea></div>
+        </legend>
+
+        <div class="">
+        <button class="btn btn-success" type="submit" value="send">SEND</button>
+        <button class="btn btn-warning" type="reset" value="delete_all">DELETE ALL</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
 <!--FOOTER-->
 <div class="container-fluid mt-5 bg__footer">
     <div class="row align-items-center">
