@@ -1,0 +1,145 @@
+.footer__bg {
+  background-color: #E0BBE4;
+}
+
+.footer__logo {
+  height: 8rem;
+}
+
+.footer__slogan {
+  color: blueviolet;
+}
+
+.footer__item {
+  height: 35px;
+}
+
+.au__text {
+  text-align: justify;
+}
+
+.au__div {
+  background: #fce8ff;
+  margin: 1rem;
+  padding: 1rem;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+  -webkit-box-shadow: -10px 10px #99999b;
+          box-shadow: -10px 10px #99999b;
+}
+
+.form__bg {
+  background-color: #fce8ff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.btn__send {
+  background-color: #e79ce7;
+}
+
+.btn__delete {
+  background-color: #dea7fd;
+}
+
+.game__board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game__box {
+  border: 1px solid #f28cff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f28cff;
+}
+
+.box__img {
+  height: 15rem;
+}
+
+h1 {
+  color: purple;
+  font-size: 8rem;
+  font-family: 'Signika', sans-serif;
+  padding-bottom: 10px;
+  text-justify: justify;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn__index::before, .btn__index::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn__index {
+  margin-left: 10rem;
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Signika', sans-serif;
+  font-size: 2rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffc4ff;
+}
+
+.btn__index::before {
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  left: 8px;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+  background-color: #f9a2f9;
+}
+
+.btn__index::after {
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  bottom: -8px;
+  -webkit-transform: skewY(45deg);
+          transform: skewY(45deg);
+  background-color: #ff87ff;
+}
+
+.btn__index:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.btn__index:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+
+.btn__index:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+/*# sourceMappingURL=master.css.map */

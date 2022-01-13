@@ -1,0 +1,26 @@
+    .ca__title {  
+    font-size: 3rem; 
+    color:white;
+    -webkit-text-stroke: 2px black;}
+
+    .ca__subtitle { 
+    font-size: 1.8rem;
+    color:white ;}
+
+
+
+
+    /*---FORM---*/ 
+
+    .form__bg {
+        background-color: rgb(252, 232, 255);
+        margin: 1rem;
+        padding: 1rem; }
+
+    /*---MOBILE---*/
+
+    @media (max-width:760px) {
+
+        .bg__footer { text-align: center; }
+        
+    }
