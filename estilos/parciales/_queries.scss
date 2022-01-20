@@ -1,0 +1,22 @@
+/*---MOBILE---*/
+
+@media (max-width:425px) {
+    .au__text {text-align: center;}
+
+    .footer { 
+
+        &__logo { height: 6rem; }
+        &__slogan {text-align: center;}
+        &__bg { text-align: center; }
+    }
+}
+
+/*---TABLET---*/
+
+@media (max-width:1024px) and (min-width:760px) {
+
+    .footer {
+    &__slogan { text-align: center;}
+    &__bg {text-align: center;}
+    }
+} 

@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <head>  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKE AN ORDER</title>
     <link rel="icon" href="../assets/logo.png">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- CCS -->
     <link rel="stylesheet" href="../estilos/master.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto+Condensed:wght@300&display=swap');
+      </style>
   </head>
 
   <body>
 <!--NAVBAR-->
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+<nav class="navbar navbar-expand-lg navbar-dark navbar__bg nav">
     <div class="container mt-3">
       <a class="navbar-brand" href="#">
         <img src="../assets/logo.png" alt="Logo Parfait Pastry" width="80" height="80">
@@ -30,19 +31,19 @@
       <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">HOME</a>
+            <a class="nav__font nav-link" href="../index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS</a>
+            <a class="nav__font nav-link" href="products.html">PRODUCTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gallery.html">GALLERY</a>
+            <a class="nav__font nav-link" href="gallery.html">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about_us.html">ABOUT US</a>
+            <a class="nav__font nav-link" href="about_us.html">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">MAKE AN ORDER</a>
+            <a class="nav__font nav-link active" aria-current="page" href="#">MAKE AN ORDER</a>
           </li>
         </ul>
       </div>
@@ -54,52 +55,52 @@
 <main>
 <div class="container mt-5">
   <div class="row justify-content-center">
-    <div class="col-10 col-md-7">
+    <div class="col-10 col-md-8">
 
-      <h3 class="text-center fs-1">Special Order</h3>
-      <form action="#" method="get" enctype="text/plain">
+      <h3 class="text-center pg__title">Special Order</h3>
+      <form class="mt-5" action="#" method="get" enctype="text/plain">
       
-        <legend class="form__bg"> <p class="mt-4 text-center">Contact information</p>
+        <legend class="form__bg"> <p class="mt-4 text-center form__fonttitle">Contact information</p>
           
-          <div class="mb-3"><label class="form-label" for="Name"> Full name </label> 
+          <div class="mb-3"><label class="form__font" for="Name"> Full name </label> 
                <input class="form-control" type="text" name="Name">
           </div>
 
-          <div class="mb-3"><label class="form-label" for="Phone_number">Phone number</label>
+          <div class="mb-3"><label class="form__font" for="Phone_number">Phone number</label>
                <input class="form-control" type="number" name="Phone_number" min="0">
           </div>
 
-          <div class="mb-3"><label class="form-label" for="email">Email address</label>
+          <div class="mb-3"><label class="form__font" for="email">Email address</label>
             <input class="form-control" type="email" id="email">
-            <div class="form-text">We'll send you the receipt and the news about your order. </div>
+            <div class="fs-6 form-text form__font">We'll send you the receipt and the news about your order. </div>
           </div>
         </legend>
       
-        <legend class="form__bg"> <p class="mt-4 text-center">Delivery specifications</p>
+        <legend class="form__bg"> <p class="mt-4 text-center form__fonttitle">Delivery specifications</p>
 
           <div class="mt-3 mb-3">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="delivery">
-              <label class="form-check-label" for="delivery" value="delivery">
+              <label class="form-check-label form__font" for="delivery" value="delivery">
                 Delivery
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="delivery" checked>
-              <label class="form-check-label" for="delivery" value="pickup">
+              <label class="form-check-label form__font" for="delivery" value="pickup">
                 Pick-up
               </label>
             </div>
             </div>
 
             <div class="mb-3">
-              <label class="form-label" for="address">Address</label>
+              <label class="form-label form__font" for="address">Address</label>
               <input class="form-control" type="text" name="address">
-              <div class="form-text">Just in case you need delivery.</div>
+              <div class="fs-6 form-text form__font">Just in case you need delivery.</div>
             </div>
 
             <div>
-              <label class="form-label" for="date">Delivery or pick up date</label>
+              <label class="form-label form__font" for="date">Delivery or pick up date</label>
               <input class="form-control" type="date" name="date">
             </div>
 
@@ -107,34 +108,34 @@
 
         </legend>
       
-        <legend class="form__bg"> <p class="text-center mt-4">Order specifications</p>
+        <legend class="form__bg"> <p class="text-center mt-4 form__fonttitle">Order specifications</p>
           
-          <div class="mb-3"><label class="form-label" for="product">Product</label>
+          <div class="mb-3"><label class="form-label form__font" for="product">Product</label>
             <select class="form-control" id="product">
-              <option>Select your product</option>
-              <option value="cheesecake">Berries cheesecake</option>
-              <option value="chocotorta">Chocotorta</option>
-              <option value="chocolate_cake">Chocolate cake</option>
-              <option value="tiramisu">Tiramisu</option>
+              <option class="form__font">Select your product</option>
+              <option class="form__font" value="cheesecake">Berries cheesecake</option>
+              <option class="form__font" value="chocotorta">Chocotorta</option>
+              <option class="form__font" value="chocolate_cake">Chocolate cake</option>
+              <option class="form__font" value="tiramisu">Tiramisu</option>
             </select></div>
         
-          <div class="mb-3"><label class="form-label" for="product">Quantity</label>
+          <div class="mb-3"><label class="form-label form__font" for="product">Quantity</label>
             <select class="form-control" id="product">
               <option>Qty</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
+              <option class="form__font" value="1">1</option>
+              <option class="form__font" value="2">2</option>
+              <option class="form__font" value="3">3</option>
+              <option class="form__font" value="4">4</option>
             </select></div>
 
-            <div><label class="form-label" for="comment"> Any additional information or instructions? </label>
-            <textarea class="form-control mb-3" id="comment" rows="6"></textarea></div>
+            <div><label class="form-label form__font" for="comment"> Any additional information or instructions? </label>
+            <textarea class="form-control mb-3 form__font" id="comment" rows="6"></textarea></div>
         </legend>
       
 
         <div class="btn-form text-center">
-        <button class="btn btn__send" type="submit" value="send">SEND</button>
-        <button class="btn btn__delete" type="reset" value="delete_all">DELETE ALL</button>
+        <button class="btn btn__send form__font fw-bold" type="submit" value="send">SEND</button>
+        <button class="btn btn__delete form__font fw-bold" type="reset" value="delete_all">DELETE ALL</button>
         </div>
 
       </form>
@@ -145,30 +146,30 @@
 
 <!--FOOTER-->
 <footer>
-<div class="container-fluid mt-5 footer__bg">
-    <div class="row align-items-center">
+<section class="container-fluid mt-5 footer__bg">
+    <article class="row align-items-center">
       <div class="col-md-2">
-        <img src="../assets/logo.png" class="img-fluid footer__logo" alt="Logo Parfait Pastry">
+        <img src="../assets/logo.png" class="footer__logo" alt="Logo Parfait Pastry">
       </div>
 
       <div class="offset-md-1 col-md-4">
-        <p class="fs-3 footer__slogan">It's time to get something sweet!</p>
+        <p class="footer__slogan">It's time to get something sweet!</p>
       </div>
 
       <div class="col-6 offset-md-1 col-md-2">
-        <p class="fs-5 mt-2">FOLLOW US!</p>
-        <p><a href="https://www.instagram.com/parfait.reposteria/" class="pe-auto"> <img class="img-fluid footer__item" src="../assets/logoinstagram.png" alt="Logo instagram"></a></p>
-        <p><a href="https://www.facebook.com/parfait.repostria/" class="pe-auto"> <img class="img-fluid footer__item" src="../assets/logofacebook.png" alt="Logo facebook"></a></p>
+        <p class="footer__font mt-2">FOLLOW US!</p>
+        <p><a href="https://www.instagram.com/parfait.reposteria/" > <img class="img-fluid footer__item" src="../assets/logoinstagram.png" alt="Logo instagram"></a></p>
+        <p><a href="https://www.facebook.com/parfait.repostria/" > <img class="img-fluid footer__item" src="../assets/logofacebook.png" alt="Logo facebook"></a></p>
       </div>
 
       <div class="col-6 col-md-2">
-        <p class="fs-5 mt-2">ORDER NOW!</p>
-        <p><a href="https://www.rappi.com.ar/restaurantes/124519-parfait-reposteria-microcentro" class="pe-auto"> <img class="img-fluid footer__item" src="../assets/logorappi.png" alt="Logo rappi"></a></p>
-        <p><a href="https://api.whatsapp.com/send?phone=5491122536980&app=facebook&entry_point=page_cta&fbclid=IwAR1pHzh93n9IaV0tzvILpH26JK5ecjmvZzjKFO-NJYt_UajSkJLEAp3USJ0" class="pe-auto"> <img class="img-fluid footer__item" src="../assets/logowhatsapp.png" alt="Logo whatsapp"></a></p>
+        <p class="footer__font mt-2">ORDER NOW!</p>
+        <p><a href="https://www.rappi.com.ar/restaurantes/124519-parfait-reposteria-microcentro" > <img class="img-fluid footer__item" src="../assets/logorappi.png" alt="Logo rappi"></a></p>
+        <p><a href="https://api.whatsapp.com/send?phone=5491122536980&app=facebook&entry_point=page_cta&fbclid=IwAR1pHzh93n9IaV0tzvILpH26JK5ecjmvZzjKFO-NJYt_UajSkJLEAp3USJ0" > <img class="img-fluid footer__item" src="../assets/logowhatsapp.png" alt="Logo whatsapp"></a></p>
 
       </div>
-    </div>
-</div> 
+    </article>
+  </section> 
 </footer>
 
 

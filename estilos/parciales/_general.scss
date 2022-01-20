@@ -1,0 +1,56 @@
+$col__violet: #E0BBE4; 
+$title: 'Raleway', sans-serif;
+$subtitle: 'Roboto Condensed', sans-serif;
+
+
+.navbar__bg {
+    background-color: $col__violet;
+}
+
+.nav__font {
+    text-decoration: none;
+    font-family: $title;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.pg__title {
+    font-family: $title;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+.footer { 
+    
+    &__font {
+        font-family: $title;
+        font-weight: bold;
+        font-size: 1rem;
+        color:black;
+    }
+
+    &__bg {
+    background-color:$col__violet ; 
+    } 
+
+    &__logo {
+    height: 8rem;
+}
+
+    &__slogan {  
+    color: blueviolet;
+    font-family: $title;
+    font-size: 1.7rem;
+}
+
+    &__item {
+    height: 35px;
+}
+}
+
+
+
+
+

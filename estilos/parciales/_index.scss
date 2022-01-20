@@ -1,30 +1,45 @@
 
-.game__board {
+.grid__board {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+   
 }
 
-.game__box {;
+.game__box {
+ 
+  background-color: purple;  
   border: 1px solid rgb(242, 140, 255);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(242, 140, 255);
+  transition: 0.5 opacity ease-in-out;
+  opacity:0.5;
 }
 
 .box__img {
+    
     height: 15rem;
+    
 }
 
-h1 { color: purple; 
-    font-size: 8rem; 
-    font-family: 'Signika', sans-serif; 
-    padding-bottom: 10px;
-    text-justify: justify;
+.game__box .box__img {
+    
+    transition: 2s transform; 
+}
+
+.hero {
+    &__title {
+        font-family: $title;
     }
 
-a { text-decoration: none; color: white;}
+    &__subt { font-family: $subtitle;
+
+    }
+}
+
+
+a { text-decoration: none; color:white;}
 
     %test {
         position: absolute;

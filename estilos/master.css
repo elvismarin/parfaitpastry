@@ -1,3 +1,28 @@
+.navbar__bg {
+  background-color: #E0BBE4;
+}
+
+.nav__font {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.pg__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.footer__font {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+}
+
 .footer__bg {
   background-color: #E0BBE4;
 }
@@ -8,42 +33,38 @@
 
 .footer__slogan {
   color: blueviolet;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
 }
 
 .footer__item {
   height: 35px;
 }
 
-.au__text {
-  text-align: justify;
+/*MEDIA MOBILE*/
+@media (max-width: 425px) {
+  .footer__logo {
+    height: 6rem;
+  }
+  .footer__slogan {
+    text-align: center;
+  }
+  .footer__bg {
+    text-align: center;
+  }
 }
 
-.au__div {
-  background: #fce8ff;
-  margin: 1rem;
-  padding: 1rem;
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: black;
-  -webkit-box-shadow: -10px 10px #99999b;
-          box-shadow: -10px 10px #99999b;
+/*MEDIA TABLET*/
+@media (max-width: 1024px) and (min-width: 760px) {
+  .footer__slogan {
+    text-align: center;
+  }
+  .footer__bg {
+    text-align: center;
+  }
 }
 
-.form__bg {
-  background-color: #fce8ff;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.btn__send {
-  background-color: #e79ce7;
-}
-
-.btn__delete {
-  background-color: #dea7fd;
-}
-
-.game__board {
+.grid__board {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
@@ -53,6 +74,7 @@
 }
 
 .game__box {
+  background-color: purple;
   border: 1px solid #f28cff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,19 +85,28 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #f28cff;
+  -webkit-transition: 0.5 opacity ease-in-out;
+  transition: 0.5 opacity ease-in-out;
+  opacity: 0.5;
 }
 
 .box__img {
   height: 15rem;
 }
 
-h1 {
-  color: purple;
-  font-size: 8rem;
-  font-family: 'Signika', sans-serif;
-  padding-bottom: 10px;
-  text-justify: justify;
+.game__box .box__img {
+  -webkit-transition: 2s -webkit-transform;
+  transition: 2s -webkit-transform;
+  transition: 2s transform;
+  transition: 2s transform, 2s -webkit-transform;
+}
+
+.hero__title {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero__subt {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 a {
@@ -141,5 +172,52 @@ a {
   right: -5px;
   width: 5px;
   bottom: -3px;
+}
+
+.au__text {
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+}
+
+.au__div {
+  background: #fce8ff;
+  margin: 1rem;
+  padding: 1rem;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: black;
+  -webkit-box-shadow: -5px 5px #99999b;
+          box-shadow: -5px 5px #99999b;
+}
+
+/*MEDIA MOBILE*/
+@media (max-width: 425px) {
+  .au__text {
+    text-align: center;
+  }
+}
+
+.form__bg {
+  background-color: #fce8ff;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.form__font {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.form__fonttitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.btn__send {
+  background-color: #e79ce7;
+}
+
+.btn__delete {
+  background-color: #dea7fd;
 }
 /*# sourceMappingURL=master.css.map */

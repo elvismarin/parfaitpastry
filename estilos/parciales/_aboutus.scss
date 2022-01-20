@@ -1,6 +1,8 @@
 
 .au__text {
-    text-align: justify;
+    text-align:justify;
+    font-family: $title;
+
 }
 
 .au__div {
@@ -10,5 +12,11 @@
     outline-style: solid;
     outline-width: 1px;
     outline-color: black;
-    box-shadow: -10px 10px rgb(153, 153, 155);
+    box-shadow: -5px 5px rgb(153, 153, 155);
+}
+
+/*MEDIA MOBILE*/
+
+@media (max-width:425px) {
+    .au__text {text-align: center;}
 }

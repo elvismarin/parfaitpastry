@@ -1,9 +1,22 @@
 
 
-.form__bg {
+.form {
+    &__bg {
     background-color: rgb(252, 232, 255);
     margin: 1rem;
     padding: 1rem; }
+
+    &__font {
+    font-family: $subtitle;    
+    }
+
+    &__fonttitle {
+        font-family: $subtitle;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    }
+
 
 .btn {
     &__send {
@@ -16,7 +29,5 @@
     }
 }
 
-.btn__form {
 
-}
 
