@@ -19,15 +19,20 @@
 
 
 .btn {
-    &__send {
-        background-color: rgb(231, 156, 231);
-
-    }
-
-    &__delete{ background-color: rgb(222, 167, 253);
-
-    }
+    font-family: $subtitle;
+    font-weight: bold
 }
+
+    .btn__send {
+        @extend .btn;
+        background-color: rgb(231, 156, 231);
+    }
+
+    .btn__delete{
+        @extend .btn; 
+        background-color: rgb(222, 167, 253);
+    }
+
 
 
 

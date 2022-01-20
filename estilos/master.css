@@ -1,3 +1,29 @@
+/*---MOBILE---*/
+@media (max-width: 425px) {
+  .au__text {
+    text-align: center;
+  }
+  .footer__logo {
+    height: 6rem;
+  }
+  .footer__slogan {
+    text-align: center;
+  }
+  .footer__bg {
+    text-align: center;
+  }
+}
+
+/*---TABLET---*/
+@media (max-width: 1024px) and (min-width: 760px) {
+  .footer__slogan {
+    text-align: center;
+  }
+  .footer__bg {
+    text-align: center;
+  }
+}
+
 .navbar__bg {
   background-color: #E0BBE4;
 }
@@ -39,29 +65,6 @@
 
 .footer__item {
   height: 35px;
-}
-
-/*MEDIA MOBILE*/
-@media (max-width: 425px) {
-  .footer__logo {
-    height: 6rem;
-  }
-  .footer__slogan {
-    text-align: center;
-  }
-  .footer__bg {
-    text-align: center;
-  }
-}
-
-/*MEDIA TABLET*/
-@media (max-width: 1024px) and (min-width: 760px) {
-  .footer__slogan {
-    text-align: center;
-  }
-  .footer__bg {
-    text-align: center;
-  }
 }
 
 .grid__board {
@@ -190,13 +193,6 @@ a {
           box-shadow: -5px 5px #99999b;
 }
 
-/*MEDIA MOBILE*/
-@media (max-width: 425px) {
-  .au__text {
-    text-align: center;
-  }
-}
-
 .form__bg {
   background-color: #fce8ff;
   margin: 1rem;
@@ -213,11 +209,84 @@ a {
   font-size: 1.5rem;
 }
 
+.btn, .btn__send, .btn__delete {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
 .btn__send {
   background-color: #e79ce7;
 }
 
 .btn__delete {
   background-color: #dea7fd;
+}
+
+.navbar__bg {
+  background-color: purple;
+}
+
+.footer__bg {
+  background-color: blueviolet;
+}
+
+.footer__slogan {
+  color: white;
+}
+
+.navbar__bg {
+  background-color: purple;
+}
+
+.footer__bg {
+  background-color: blueviolet;
+}
+
+.footer__slogan {
+  color: white;
+}
+
+.navbar__bg {
+  background-color: purple;
+}
+
+.footer__bg {
+  background-color: blueviolet;
+}
+
+.footer__slogan {
+  color: white;
+}
+
+.navbar__bg {
+  background-color: purple;
+}
+
+.footer__bg {
+  background-color: blueviolet;
+}
+
+.footer__slogan {
+  color: white;
+}
+
+.hero__title {
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero__title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: tomato;
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=master.css.map */

@@ -1,0 +1,16 @@
+@import "./responsive-mixins";
+
+.hero__title { 
+    font-family: fantasy;
+
+    @include tablet {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: blue;
+        font-size: 4rem;}
+    
+    @include mobile {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: tomato;
+        font-size: 3rem;}
+
+}
