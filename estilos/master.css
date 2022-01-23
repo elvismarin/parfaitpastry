@@ -12,6 +12,9 @@
   .footer__bg {
     text-align: center;
   }
+  .gal__text {
+    text-align: center;
+  }
 }
 
 /*---TABLET---*/
@@ -25,7 +28,7 @@
 }
 
 .navbar__bg {
-  background-color: #E0BBE4;
+  background-color: purple;
 }
 
 .nav__font {
@@ -46,11 +49,11 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: black;
+  color: white;
 }
 
 .footer__bg {
-  background-color: #E0BBE4;
+  background-color: purple;
 }
 
 .footer__logo {
@@ -58,7 +61,7 @@
 }
 
 .footer__slogan {
-  color: blueviolet;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
 }
@@ -186,11 +189,6 @@ a {
   background: #fce8ff;
   margin: 1rem;
   padding: 1rem;
-  outline-style: solid;
-  outline-width: 1px;
-  outline-color: black;
-  -webkit-box-shadow: -5px 5px #99999b;
-          box-shadow: -5px 5px #99999b;
 }
 
 .form__bg {
@@ -222,71 +220,17 @@ a {
   background-color: #dea7fd;
 }
 
-.navbar__bg {
-  background-color: purple;
+.gal__text {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
 }
 
-.footer__bg {
-  background-color: blueviolet;
+.gal__social {
+  color: purple;
+  font-weight: bold;
 }
 
-.footer__slogan {
-  color: white;
-}
-
-.navbar__bg {
-  background-color: purple;
-}
-
-.footer__bg {
-  background-color: blueviolet;
-}
-
-.footer__slogan {
-  color: white;
-}
-
-.navbar__bg {
-  background-color: purple;
-}
-
-.footer__bg {
-  background-color: blueviolet;
-}
-
-.footer__slogan {
-  color: white;
-}
-
-.navbar__bg {
-  background-color: purple;
-}
-
-.footer__bg {
-  background-color: blueviolet;
-}
-
-.footer__slogan {
-  color: white;
-}
-
-.hero__title {
-  font-family: fantasy;
-}
-
-@media screen and (max-width: 768px) {
-  .hero__title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blue;
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .hero__title {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: tomato;
-    font-size: 3rem;
-  }
+.gif__wdth {
+  width: 100%;
 }
 /*# sourceMappingURL=master.css.map */

@@ -24,30 +24,30 @@
   <body>
 <!--NAVBAR-->
 <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+<nav class="navbar navbar-expand-lg navbar-dark navbar__bg nav">
     <div class="container mt-3">
       <a class="navbar-brand" href="#">
         <img src="../assets/logo.png" alt="Logo Parfait Pastry" width="80" height="80">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
         <ul class="navbar-nav align-items-center">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">HOME</a>
+            <a class="nav-link nav__font" href="../index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="products.html">PRODUCTS</a>
+            <a class="nav-link nav__font" href="products.html">PRODUCTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">GALLERY</a>
+            <a class="nav-link nav__font active" aria-current="page" href="#">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about_us.html">ABOUT US</a>
+            <a class="nav-link nav__font" href="about_us.html">ABOUT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="make_an_order.html">MAKE AN ORDER</a>
+            <a class="nav-link nav__font" href="make_an_order.html">MAKE AN ORDER</a>
           </li>
         </ul>
       </div>
@@ -59,6 +59,8 @@
 <main>
 <div class="container">
   <div class="row align-items-center">
+
+    <p class="mt-5 pg__title text-center">Gallery</p>
 
     <div class="col-md-5 mt-5">
     <div  class="carousel slide" data-bs-ride="carousel">
@@ -99,25 +101,26 @@
     </div> </div>
     
     <div class="offset-md-1 col-md-6 mt-5">
-    <h1>Share your pics in socialmedia with <span>#ParfaitPastry</span> so we can post them here!</h1>
+    <h2 class="gal__text">Share your pics in socialmedia with <span class="gal__social">#ParfaitPastry</span> so we can post them here!</h2>
     </div>
 
   </div>
 </div>
-<!--VIDEOS-->  
-<div class="container-fluid">
-  <div class="row">
 
-    <div class="offset-md-1 col-md-3 mt-5">
-      <video style="height: 30rem" src="../assets/gallery/video1.mp4" controls></video>
+<!--GIFS-->  
+<div class="container">
+  <div class="row justify-content-between">
+
+    <div class="col-md-5 mt-5">
+      <img class="gif__wdth" style="height: 30rem" src="../assets/gallery/gif1.gif"></img>
       </div>
       
-      <div class="col-md-4 mt-5">
-      <video style="height: 30rem" src="../assets/gallery/video2.mp4" controls></video>
+      <div class="col-md-3 mt-5">
+      <img class="gif__wdth" style="height: 30rem" src="../assets/gallery/gif2.gif"></img>
       </div>
   
-      <div class="offset-md-1 col-md-3 mt-5">
-      <video style="height: 30rem" src="../assets/gallery/video3.mp4" controls></video>
+      <div class="col-md-3 mt-5">
+      <img class="gif__wdth" style="height: 30rem" src="../assets/gallery/gif3.gif"></img>
       </div>
 
 
@@ -128,7 +131,7 @@
 
 <!--FOOTER-->
 <footer>
-<div class="container-fluid mt-5 bg__footer">
+<div class="container-fluid mt-5 footer__bg">
     <div class="row align-items-center">
       <div class="col-md-2">
         <img src="../assets/logo.png" class="img-fluid footer__logo" alt="Logo Parfait Pastry">
