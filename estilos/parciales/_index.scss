@@ -1,97 +1,211 @@
-
 .grid__board {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-   
 }
 
-.game__box {
- 
-  background-color: purple;  
-  border: 1px solid rgb(242, 140, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5 opacity ease-in-out;
-  opacity:0.5;
-}
+
 
 .box__img {
-    
-    height: 15rem;
-    
-}
-
-.game__box .box__img {
-    
-    transition: 2s transform; 
+    height: 12rem;
 }
 
 .hero {
     &__title {
         font-family: $title;
+        font-size: 4rem;
+        color: $col__violet;
+        font-weight: bold;
+        text-align: start;
     }
 
-    &__subt { font-family: $subtitle;
+    &__subt {
+        font-family: $subtitle;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: start;
+    }
+}
+
+.btn__index {
+    text-decoration: none;
+    padding: 12px;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: $col__violet;
+    border-radius: 6px;
+    border: 2px solid $col__violet;
+}
+
+.btn__index:hover {
+    color: $col__violet;
+    background-color: #ffffff;
+}
+
+.gp {
+    &__1 {
+        grid-area: topl;
+        height: 10rem;
+
+    }
+
+    &__2 {
+        grid-area: topr;
+        height: 10rem;
+    }
+
+    &__3 {
+        grid-area: bot;
+        height: 10rem;
+    }
+
+    &__grilla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "topl topr 
+bot bot";
 
     }
 }
 
+/*--MOBILE--*/
+@media (max-width:325px) {
 
-a { text-decoration: none; color:white;}
+    .box__img {
+        height: 6.2rem;
+    }
 
-    %test {
-        position: absolute;
-          content: '';
-          transition: all .5s;
-      }
+    .hero__title {
+        text-align: center;
+        font-size: 3rem;
+    }
 
-    .btn__index { 
-        margin-left: 10rem;
-        margin-top: 10rem;
-        display: flex; 
-        padding: 10px 20px;
-        transform: translate(-50%, -50%);
-        font-family: 'Signika', sans-serif;
-        font-size: 2rem;
-        transition: all .5s;
-        background-color: rgb(255, 196, 255);
-    
-    
-        &::before {
-        @extend %test;
-            bottom: -15px;
-            height: 15px;
-            width: 100%;
-            left: 8px;
-            transform: skewX(45deg);
-            background-color: darken(rgb(252, 210, 252), 10%);
+    .map__index {
+        height: 250px;
+        width: 250px;
+        margin-left: 2rem;
+    }
+
+}
+
+@media (max-width:375px) and (min-width:330px) {
+
+    .box__img {
+        height: 7.3rem;
+    }
+
+    .hero {
+        &__title {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 1rem;
         }
-    
-        &::after {
-            @extend %test;
-            right: -15px;
-            height: 100%;
-            width: 15px;
-            bottom: -8px;
-            transform: skewY(45deg);
-            background-color: darken(rgb(255, 196, 255), 12%);
-        }
-    
-        &:active {
-            margin-left: 10px;
-            margin-top: 10px;
-            &::before {
-                bottom: -5px;
-                height: 5px;
-                left: 3px;
-            }
-            
-        &::after {
-                right: -5px;
-                width: 5px;
-                bottom: -3px;
-            }	
+
+        &__subt {
+            text-align: center;
         }
     }
+
+    .map__index {
+        height: 300px;
+        width: 300px;
+        margin-left: 2rem;
+    }
+
+    .gp__grilla {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px) and (min-width:380px) {
+
+    .box__img {
+        height: 8.4rem;
+    }
+
+    .map__index {
+        height: 300px;
+        width: 350px;
+        margin-left: 2rem;
+    }
+
+    .hero {
+        &__title {
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 1rem;
+        }
+
+        &__subt {
+            text-align: center;
+        }
+    }
+
+    .gp__grilla {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:780px) and (min-width:760px) {
+
+    .box__img {
+        height: 14.5rem;
+    }
+
+    .hero {
+        &__title {
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 1rem;
+        }
+
+        &__subt {
+            text-align: center;
+        }
+    }
+
+    .map__index {
+        height: 300px;
+        width: 300px;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width:1430px) and (min-width:790px) {
+
+    .map__index {
+        height: 250px;
+        width: 400px;
+        margin-left: 1rem;
+    }
+
+}
+
+@media (min-width:1440px) {
+
+    .box__img {
+        height: 17rem;
+    }
+
+    .hero {
+        &__title {
+            font-size: 6rem;
+        }
+
+        &__subt {
+            text-align: center;
+        }
+    }
+
+    .map__index {
+        height: 300px;
+        width: 600px;
+        margin-left: 1rem;
+    }
+}

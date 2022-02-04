@@ -1,6 +1,8 @@
-$col__violet: purple; 
-$title: 'Raleway', sans-serif;
-$subtitle: 'Roboto Condensed', sans-serif;
+$col__violet: purple;
+$title: 'Raleway',
+sans-serif;
+$subtitle: 'Roboto Condensed',
+sans-serif;
 
 
 .navbar__bg {
@@ -22,35 +24,66 @@ $subtitle: 'Roboto Condensed', sans-serif;
 }
 
 
-.footer { 
-    
+.footer {
+
     &__font {
         font-family: $title;
         font-weight: bold;
         font-size: 1rem;
-        color:white;
+        color: white;
     }
 
     &__bg {
-    background-color:$col__violet ; 
-    } 
+        background-color: $col__violet;
+    }
 
     &__logo {
-    height: 8rem;
-}
+        height: 8rem;
+    }
 
-    &__slogan {  
-    color: white;
-    font-family: $title;
-    font-size: 1.7rem;
-}
+    &__slogan {
+        color: white;
+        font-family: $title;
+        font-size: 1.7rem;
+    }
 
     &__item {
-    height: 35px;
+        height: 35px;
+    }
 }
+
+/*---MOBILE---*/
+
+@media (max-width:425px) {
+
+    .footer {
+
+        &__logo {
+            height: 6rem;
+        }
+
+        &__slogan {
+            text-align: center;
+        }
+
+        &__bg {
+            text-align: center;
+        }
+    }
 }
 
 
+/*---TABLET---*/
 
+@media (max-width:1024px) and (min-width:760px) {
 
+    .footer {
+        &__slogan {
+            text-align: center;
+        }
 
+        &__bg {
+            text-align: center;
+        }
+    }
+}

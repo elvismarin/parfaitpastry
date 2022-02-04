@@ -1,13 +1,12 @@
-
-
 .form {
     &__bg {
-    background-color: rgb(252, 232, 255);
-    margin: 1rem;
-    padding: 1rem; }
+        background-color: rgb(252, 232, 255);
+        margin: 1rem;
+        padding: 1rem;
+    }
 
     &__font {
-    font-family: $subtitle;    
+        font-family: $subtitle;
     }
 
     &__fonttitle {
@@ -15,7 +14,7 @@
         font-weight: bold;
         font-size: 1.5rem;
     }
-    }
+}
 
 
 .btn {
@@ -23,16 +22,12 @@
     font-weight: bold
 }
 
-    .btn__send {
-        @extend .btn;
-        background-color: rgb(231, 156, 231);
-    }
+.btn__send {
+    @extend .btn;
+    background-color: rgb(231, 156, 231);
+}
 
-    .btn__delete{
-        @extend .btn; 
-        background-color: rgb(222, 167, 253);
-    }
-
-
-
-
+.btn__delete {
+    @extend .btn;
+    background-color: rgb(222, 167, 253);
+}

@@ -1,7 +1,8 @@
-
 .gal__text {
     font-family: $title;
     text-align: justify;
+    background: rgb(252, 232, 255);
+    padding: 1rem;
 }
 
 .gal__social {
@@ -13,3 +14,26 @@
     width: 100%;
 }
 
+/*-MOBILE-*/
+@media (max-width:425px) {
+    .gal__text {
+        text-align: center;
+    }
+
+    .gif__wdth {
+        width: 80%;
+    }
+
+    .gif__container {
+        text-align: center;
+    }
+}
+
+/*-TABLET-*/
+
+@media (max-width:1024px) and (min-width:760px) {
+    .gif__wdth {
+        width: 90%
+    }
+
+}

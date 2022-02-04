@@ -1,14 +1,20 @@
-
 .au__text {
-    text-align:justify;
+    text-align: justify;
     font-family: $title;
-
+    font-size: 1.3rem;
 }
 
 .au__div {
     background: rgb(252, 232, 255);
     margin: 1rem;
     padding: 1rem;
-   
 }
 
+/*--MOBILE--*/
+@media (max-width:425px) {
+
+    .au__text {
+        text-align: center;
+    }
+
+}
